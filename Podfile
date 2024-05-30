@@ -8,12 +8,15 @@ target 'ExFirebase' do
   # Pods for ExFirebase
    # pod 'Firebase/Analytics'
 
- #  pod 'FirebaseMessaging'
+    
 #   pod 'FirebaseInAppMessaging'
     pod 'Firebase/Auth'	
     pod 'Firebase/Core'
+
     
    pod 'GoogleSignIn'
+
+    pod 'FirebaseFirestore'
 
 
 

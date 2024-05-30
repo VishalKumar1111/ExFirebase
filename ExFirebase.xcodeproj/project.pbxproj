@@ -16,6 +16,7 @@
 		14D2DF982B8F4837000A7517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D2DF962B8F4837000A7517 /* Main.storyboard */; };
 		14D2DF9A2B8F4838000A7517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D2DF992B8F4838000A7517 /* Assets.xcassets */; };
 		14D2DF9D2B8F4838000A7517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D2DF9B2B8F4838000A7517 /* LaunchScreen.storyboard */; };
+		14DFAEE52C07B33100861A66 /* AllDataTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DFAEE42C07B33100861A66 /* AllDataTableviewCell.swift */; };
 		C2882704D5AC4C80844A6A47 /* Pods_ExFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D183AF831DD2144E004241 /* Pods_ExFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		14D2DF992B8F4838000A7517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D2DF9C2B8F4838000A7517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14D2DF9E2B8F4838000A7517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DFAEE42C07B33100861A66 /* AllDataTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDataTableviewCell.swift; sourceTree = "<group>"; };
 		3DFF7CCDC20E074302FD8A75 /* Pods-ExFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExFirebase.release.xcconfig"; path = "Target Support Files/Pods-ExFirebase/Pods-ExFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		41D183AF831DD2144E004241 /* Pods_ExFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA679DBFDDD8EA7FF304DEB /* Pods-ExFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExFirebase.debug.xcconfig"; path = "Target Support Files/Pods-ExFirebase/Pods-ExFirebase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				141EC20E2B91EDD300B02EE2 /* SuccessfullViewController.swift */,
 				14D2DF9E2B8F4838000A7517 /* Info.plist */,
 				141EC2212B91FE7800B02EE2 /* GoogleService-Info.plist */,
+				14DFAEE42C07B33100861A66 /* AllDataTableviewCell.swift */,
 			);
 			path = ExFirebase;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				141EC20F2B91EDD300B02EE2 /* SuccessfullViewController.swift in Sources */,
 				14D2DF932B8F4837000A7517 /* SceneDelegate.swift in Sources */,
 				141EC20D2B91E92000B02EE2 /* SignUpController.swift in Sources */,
+				14DFAEE52C07B33100861A66 /* AllDataTableviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +378,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N864W465X2;
+				DEVELOPMENT_TEAM = 8H5G6TXJ34;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -403,7 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N864W465X2;
+				DEVELOPMENT_TEAM = 8H5G6TXJ34;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

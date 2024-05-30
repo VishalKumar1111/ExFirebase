@@ -8,6 +8,7 @@ class ViewController: UIViewController{
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
+    @IBOutlet weak var txtMobile: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,11 +39,42 @@ class ViewController: UIViewController{
             if let error = error {
                 print("Login error: \(error.localizedDescription)")
             } else {
+                self.saveCredentialsToFirestore(email: email, password: password)
+                
                 self.checkUserInfo()
                 
             }
         }
     }
+    @IBAction func btnCreate(_ sender: Any) {
+        let vc  = self.storyboard?.instantiateViewController(withIdentifier: "signup") as? SignUpController
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+    }
+    
+    func saveCredentialsToFirestore(email: String, password: String) {
+           guard let currentUser = Auth.auth().currentUser else {
+               print("No user is currently signed in")
+               return
+           }
+           
+           let db = Firestore.firestore()
+           let userDocRef = db.collection("users").document(currentUser.uid)
+           
+           let data: [String: Any] = [
+               "email": email,
+               "password": password
+               ,"phone": txtMobile.text
+           ]
+           
+           userDocRef.setData(data) { error in
+               if let error = error {
+                   print("Error saving credentials to Firestore: \(error.localizedDescription)")
+               } else {
+                   print("Credentials saved to Firestore successfully")
+               }
+           }
+       }
     
     func checkUserInfo() {
         if let currentUser = Auth.auth().currentUser {
